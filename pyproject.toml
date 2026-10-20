@@ -1,0 +1,30 @@
+[project]
+name = "learning-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "VihaanGoyal12", email = "102225589+VihaanGoyal12@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "chromadb>=1.5.9",
+    "faiss-cpu>=1.15.1",
+    "ipykernel>=7.4.0",
+    "langchain>=1.4.6",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.12",
+    "langchain-groq>=1.1.3",
+    "langchain-text-splitters>=1.1.3",
+    "pymupdf>=1.28.2",
+    "pypdf>=6.21.1",
+    "python-dotenv>=1.2.4",
+    "sentence-transformers>=6.1.0",
+]
+
+[project.scripts]
+learning-rag = "learning_rag:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
